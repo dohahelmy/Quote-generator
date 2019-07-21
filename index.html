@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- style sheet -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand|Sofia" rel="stylesheet">
+
+        <!-- webpage title -->
+        <title>Quote Generator</title>
+    </head>
+    <body>
+        <div>
+            <img src="logo-quote.png" alt="Quote" width="300px">
+            <h1 id="quote-display">Click Generate button</h1>
+        </div>
+        <div>
+            <h3>Select a type of quotes</h3>
+            <button type="button" name="button" id="btn1" class="button-style" onclick="btn1_click()">Funny</button>
+            <button type="button" name="button" id="btn2" class="" onclick="btn2_click()">Insult</button>
+            <form action="">
+                <h3>Select no# of quotes needed</h3>
+                <input type="radio" name="quotes" value="1" checked>1
+                <input type="radio" name="quotes" value="2">2
+                <input type="radio" name="quotes" value="3">3
+                <input type="radio" name="quotes" value="4">4
+                <input type="radio" name="quotes" value="5">5
+            </form>
+            <br>
+            <button onclick="generate()" id="generator-button">Generate</button>
+        </div>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
